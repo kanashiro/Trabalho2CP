@@ -33,6 +33,10 @@ public class ImageProjection {
 	// Matriz H
 	double H[][] = { {5.818 , -1.534 , -2366.337}, {0 , 13.186 , -514.285}, { 0 , -0.004, 1.494} };
 	
+	// images names
+	String originName = "Resources/Images/quarto-2.jpg";
+	String textureName = "Resources/Images/ceu.jpg";
+	
 	public void GenerateLinesOfLimits(){
 		this.a1 = (this.y1 - this.y2)/(this.x1 - this.x2);
 		this.b1 = (this.x1*this.y2 - this.y1*this.x2)/(this.x1-this.x2);
@@ -58,8 +62,8 @@ public class ImageProjection {
 	}
 	
 	public void ProjectImage() throws IOException{
-		BufferedImage origin = ImageIO.read(new File("Resources/Images/quarto-2.jpg")); 
-		BufferedImage texture = ImageIO.read(new File("Resources/Images/ceu.jpg"));  
+		BufferedImage origin = ImageIO.read(new File(this.originName)); 
+		BufferedImage texture = ImageIO.read(new File(this.textureName));  
 	
 		this.GenerateLinesOfLimits();
 		this.TradeColor(origin, texture);

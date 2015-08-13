@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author WillianKanashiro
- *
- */
-package projecao;

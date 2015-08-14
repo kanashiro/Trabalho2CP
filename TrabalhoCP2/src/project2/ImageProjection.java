@@ -11,8 +11,8 @@ import javax.imageio.ImageIO;
 public class ImageProjection {
 
 	// Matriz H
-	double H[][] = { { 2.2246, 8.1401, -1534.6280 }, { -1.0740, 5.1611, 549.9702 },
-			{ 0, -0.0021, 1.3207 } };
+	double H[][] = { { 2.22466114, 8.1400554, -1534.6279626 }, { -1.0739857, 5.1610979, 549.9701671 },
+			{ 0.0000087, -0.0021036, 1.3207161 } };
 
 	// images names
 	String originName = "Resources/Images/quarto-bebe.jpg";
